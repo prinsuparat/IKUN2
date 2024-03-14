@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 设置容器尺寸 - 原理1 */
+            width: 100vh;
+            height: 100vh;
+            /* 背景渐变色 - 原理2 */
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            /* 背景尺寸 - 原理3 */
+            background-size: 600% 600%;
+            /* 循环动画 - 原理4 */
+            animation: gradientBG 20s ease infinite;
+        }
+
+        /* 动画，控制背景 background-position */
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient"></div>
+        
+
+
+
+</body>
+
+</html>
